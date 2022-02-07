@@ -1,0 +1,518 @@
+/*
+Theme Name: Aprova
+Theme URI: #
+Author: Aprova
+Author URI: #
+Description: Aprova - MultiPurpose Creative HTML5 Responsive Template
+Version: 1.0
+License:
+License URI:
+*/
+
+/*=======================================================================
+[Table of contents]
+=========================================================================
+
+1. Font Settings
+2. Typography Settings
+3. Section Title Settings
+4. Button Settings
+5. Section Settings
+*/
+
+/*------------------------------------------------------------------------------
+/ 1. Font Settings
+------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+body, html{
+    margin: 0;
+    padding: 0;
+	overflow-x:hidden;
+}
+body{
+    line-height: 28px;
+    color: #555555;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    transition: all ease 400ms;
+    -webkit-transition: all ease 400ms;
+    -moz-transition: all ease 400ms;
+}
+
+/*------------------------------------------------------------------------------
+/ 2. Typography Settings
+------------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6{
+    color: #333333;
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+button:focus{
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    appearance: none;
+    -moz-appearance: none;
+    margin: 0; 
+}
+input[type="number"] {
+    -moz-appearance: textfield !important;
+}
+a{
+    color: #333333;
+    text-decoration: none;
+    transition: all ease 400ms;
+    -webkit-transition: all ease 400ms;
+    -moz-transition: all ease 400ms;
+}
+a:hover, a:focus{
+    text-decoration: none;
+    outline: 0;
+}
+a:focus{
+    color: #fff;
+}
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*------------------------------------------------------------------------------
+/ 3. Section Title Settings
+------------------------------------------------------------------------------*/
+.noPadding{
+    padding: 0;
+}
+.noPaddingRight{
+    padding-right: 0;
+}
+.noPaddingLeft{
+    padding-left: 0;
+}
+
+/*------------------------------------------------------------------------------
+/ 4. Button Settings
+------------------------------------------------------------------------------*/
+.app_btn{
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-weight: 400;
+    background: transparent;
+    color: #fff;
+    height: 40px;
+    text-align: center;
+    padding: 14px 40.2px;
+    display: inline-block;
+    line-height: .8;
+    letter-spacing: 0;
+    position: relative;
+    border-radius: 30px;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+}
+.app_btn span {
+    position: relative;
+    z-index: 2;
+}
+.app_btn::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: rgb(0,25,153);
+    background: linear-gradient(0deg, rgba(0,25,153,1) 0%, rgba(67,12,181,1) 50%);
+    transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+}
+.app_btn:hover:after {
+    width: 100%;
+    height: 100%;
+}
+.app_btn:hover{
+    color: #fff;
+    border-color: transparent;
+}
+/*------------------------------------------------------------------------------
+/ 5. Section Settings
+------------------------------------------------------------------------------*/
+.app_sec_title{
+    font-size: 35px;
+    line-height: 28px;
+    color: #333333;
+    font-weight: 600;
+    margin: 0 0 17px;
+}
+.app_sec_title i,
+.app_sec_title span{
+    display: block;
+    margin-bottom: 12px;
+}
+.app_sec_title img{
+    width: 104px;
+    height: 11px;
+    text-align: center;
+}
+.sec_desc{
+    margin: 0 0 56px;
+}
+.white{
+    color: #fff;
+}
+
+
+/*------------------------------------------------------------------------------
+/ 5. slider are
+------------------------------------------------------------------------------*/
+
+.witr_slick_slider_area {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url(../images/agency/shape1.png) no-repeat left center;
+}
+
+.agen_sec_title{
+    font-size: 40px;
+    line-height: 28px;
+    color: #0025b1;
+    font-weight: 900;
+    margin: 0 0 26px;
+}
+.sec_desc{
+    margin: 0 0 55px;
+}
+.white{
+    color: #fff;
+}
+.padRight_79{
+    padding-right: 79px;
+}
+.paTop_96{
+    padding-top: 96px;
+}
+
+
+
+.wirt_ani_slick_image {
+position:absolute;
+left:-3%;
+top:-11%;
+animation:witr_movetb_box45 3s linear 2s infinite alternate running;
+}
+
+
+.witr_ds_content_area{
+height:880px;
+background-size:cover;
+background-position:center center;
+overflow:hidden;
+}
+
+.witr_ds_content_inner {
+position:relative;
+top:43%;
+/* transform:translateY(-50%); */
+}
+
+.witr_ds_content_inner h1 {
+font-size:25px;
+margin-bottom:15px;
+color:#000000;
+}
+
+.witr_ds_content_inner h2 {
+font-size:80px;
+text-transform:capitalize;
+margin-bottom:20px;
+color:rgb(0, 37, 177);
+line-height:1.1;
+}
+
+.witr_ds_content_inner h3 {
+font-size:63px;
+text-transform:capitalize;
+margin-bottom:20px;
+}
+
+.witr_ds_content_inner h4 {
+font-size:22px;
+color:#fff;
+}
+
+.witr_ds_content_inner h1 span,.witr_ds_content_inner h2 span,.witr_ds_content_inner h3 span {
+color:#fe0040;
+}
+
+.witr_ds_content_inner p {
+width:62%;
+margin:15px auto;
+font-size:16px;
+color: rgb(113, 113, 113);
+margin:0;
+font-weight:700;
+}
+
+.witr_slicks_title {
+position:absolute;
+top:-13%;
+bottom:0;
+right:0;
+left:0;
+z-index:-1;
+}
+
+.witr_slicks_title h4 {
+font-size:150px;
+-webkit-text-stroke:1px #052944;
+-webkit-text-fill-color:transparent;
+color:#052944;
+line-height:1;
+opacity:.07;
+margin:0;
+}
+
+.text-left .witr_ds_content_inner h1,.text-left .witr_ds_content_inner h2,.text-left .witr_ds_content_inner h3,.text-left .witr_ds_content_inner p,.text-left .witr_slicks_title h4 {
+width:62%;
+margin:14px auto 20px 0;
+}
+
+.witr_ds_content_inner.witr_ds_content_inner3 p {
+margin-top:36px;
+}
+
+.text-center .witr_ds_content_inner h1,.text-center .witr_ds_content_inner h2,.text-center .witr_ds_content_inner h3,.text-center .witr_ds_content_inner p,.text-center .witr_slicks_title h4 {
+margin-left:auto;
+margin-right:auto;
+}
+
+.text-right .witr_ds_content_inner h1,.text-right .witr_ds_content_inner h2,.text-right .witr_ds_content_inner h3,.text-right .witr_ds_content_inner p,.text-right .witr_slicks_title h4 {
+width:62%;
+margin:14px 0 15px auto;
+}
+
+.text-left .witr_slicks_title h4,.text-left .witrscontainer h1,.text-left .witrscontainer h2,.text-left .witrscontainer h3,.text-left .witrscontainer p {
+width:40%;
+margin:14px auto 15px 0;
+}
+
+.text-center .witr_slicks_title h4,.text-center .witrscontainer h1,.text-center .witrscontainer h2,.text-center .witrscontainer h3,.text-center .witrscontainer p {
+width:70%;
+margin-left:auto;
+margin-right:auto;
+}
+
+.text-right .witr_slicks_title h4,.text-right .witrscontainer h1,.text-right .witrscontainer h2,.text-right .witrscontainer h3,.text-right .witrscontainer p {
+width:40%;
+margin:14px 0 15px auto;
+}
+
+.text-center .witr_slicks_title h4,.text-center .witrscontainer h1,.text-center .witrscontainer h2,.text-center .witrscontainer h3,.text-center .witrscontainer p {
+width:76%;
+margin-left:auto;
+margin-right:auto;
+}
+
+.text-left .witr_slicks_title h4 {
+width:50%;
+}
+
+.text-right .witr_slicks_title h4 {
+width:50%;
+}
+
+.text-center .witr_slicks_title h4 {
+width:70%;
+margin-left:auto;
+margin-right:auto;
+}
+
+@media (min-width:1200px) {
+.witrscontainer {
+max-width:1430px;
+}
+}
+
+.witrscontainer {
+width:100%;
+padding-right:15px;
+padding-left:15px;
+margin-right:auto;
+margin-left:auto;
+}
+
+.text-left .witr_slider_thumb {
+position:absolute;
+right:0;
+top:57%;
+-webkit-transform:translateY(-50%);
+transform:translateY(-50%);
+}
+
+.text-right .witr_slider_thumb {
+position:absolute;
+left:0;
+top:57%;
+-webkit-transform:translateY(-50%);
+transform:translateY(-50%);
+}
+
+.slider_btn .witr_btn {
+outline:0;
+border-style:solid;
+border-width:0 0 2px;
+border-color:transparent;
+}
+
+.slider_btn .witr_btn.active {
+background:0 0;
+border:1px solid #fe0040;
+color:#fe0040;
+}
+
+.slider_btn .witr_btn.active:hover {
+background:#fe0040;
+border:1px solid#fe0040;
+color:#fff;
+}
+
+.slider_btn {
+margin-top:45px;
+}
+
+
+
+.slick-next,.slick-prev {
+font-size:0;
+position:absolute;
+display:block;
+padding:0;
+cursor:pointer;
+color:#fff;
+outline:0;
+background:#fe0040;
+z-index:1;
+opacity:0;
+border-radius:50px;
+box-shadow:0 0 5px rgba(0,0,0,.1);
+width:60px;
+height:60px;
+line-height:60px;
+top:50%;
+transform:translate(0,-50%);
+border-radius:5px;
+transition:.5s;
+border:0 solid #646464;
+}
+
+.slick-prev {
+  left:0px;
+}
+
+.slick-next {
+right:0px;
+}
+
+.slick-next.slick-disabled,.slick-prev.slick-disabled {
+background:#fe0040;
+}
+
+.witr_ds_content_area .slick-prev {
+left:15px;
+}
+
+.witr_ds_content_area .slick-next {
+right:15px;
+}
+
+.slick-next:before,.slick-prev:before {
+color:#fff;
+font-size:30px;
+-webkit-transition:all .3s ease 0s;
+transition:all .3s ease 0s;
+content:"\f177";
+font-family:FontAwesome;
+}
+
+.slick-next:before {
+content:"\f178";
+font-family:FontAwesome;
+}
+
+.slick-next:focus,.slick-next:hover,.slick-prev:focus,.slick-prev:hover {
+background:#252427;
+border-color:transparent;
+outline-color:transparent;
+outline:0;
+}
+
+.slick-next:focus:before,.slick-next:hover:before,.slick-prev:focus:before,.slick-prev:hover:before {
+color:#fff;
+}
+
+.single_portfolio_previwe:hover .slick-prev,.single_portfolio_previwe:hover .slick-next,.themex_testomonial_active:hover .slick-next,.themex_testomonial_active:hover .slick-prev,.Screenshots-slide:hover .slick-next,.Screenshots-slide:hover .slick-prev,.Single_blog_testimonial_active:hover .slick-next,.Single_blog_testimonial_active:hover .slick-prev,.blog_active:hover .slick-next,.blog_active:hover .slick-prev,.blog_wrap:hover .slick-next,.blog_wrap:hover .slick-prev,.event_active:hover .slick-next,.event_active:hover .slick-prev,.images_area:hover .slick-next,.images_area:hover .slick-prev,.imagess_area:hover .slick-next,.imagess_area:hover .slick-prev,.mobile-slide-7:hover .slick-next,.mobile-slide-7:hover .slick-prev,.mobile-slide:hover .slick-next,.mobile-slide:hover .slick-prev,.testomonial-slide:hover .slick-next,.testomonial-slide:hover .slick-prev,.testomonial:hover .slick-next,.testomonial:hover .slick-prev,.testomonial_active:hover .slick-next,.testomonial_active:hover .slick-prev,.witr_case:hover .slick-next,.witr_case:hover .slick-prev,.witr_ds_content_area:hover .slick-next,.witr_ds_content_area:hover .slick-prev,.witr_islidess_slick:hover .slick-next,.witr_islidess_slick:hover .slick-prev,.witr_slick_active:hover .slick-next,.witr_slick_active:hover .slick-prev,.witr_team_area_c:hover .slick-next,.witr_team_area_c:hover .slick-prev {
+opacity:1;
+}
+
+.witr_btn {
+	background:#fff;
+    color:#0025b1;
+    display: inline-block;
+    font-size: 15px;
+    /* padding: 12px 40px; */
+    text-align: center;
+    position: relative;
+    margin-right: 20px;
+    z-index: 2;
+    transition: 1s;
+    font-weight: 700;
+    border-radius: 5px;
+    height: 50px;
+    width: 180px;	
+	 line-height:50px;
+}
+.single_image {
+    animation: witr_abmovetb_box15 3s linear 2s infinite alternate running;
+}
+
+
+
+
+
+.main-slider-area {
+    background-repeat: no-repeat;
+    background-image: url(images/app/slider.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: inherit;
+    z-index: 20;
+}
+
+
+
+
